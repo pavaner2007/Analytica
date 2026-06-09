@@ -1,0 +1,159 @@
+{"timestamp": "2025-10-30 22:00:35", "action": "upload_dataset", "details": "S10_R5_G1.csv"}
+{"timestamp": "2025-10-30 22:01:16", "action": "prediction", "details": "Feature: Channel_4, Target: Channel_1"}
+{"timestamp": "2025-11-03 14:44:10", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-03 14:44:56", "action": "imputation", "details": "Mean"}
+{"timestamp": "2025-11-03 14:45:03", "action": "imputation", "details": "Median"}
+{"timestamp": "2025-11-03 14:45:11", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-03 14:45:40", "action": "AI_query", "details": "describe"}
+{"timestamp": "2025-11-03 14:46:19", "action": "prediction", "details": "Feature: Age, Target: Employee_ID"}
+{"timestamp": "2025-11-03 14:47:10", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-03 14:47:33", "action": "imputation", "details": "KNN"}
+{"timestamp": "2025-11-03 14:47:47", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-03 14:48:10", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-12 20:37:56", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 20:42:04", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 20:45:29", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 20:49:18", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2025-11-12 20:49:43", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 20:49:48", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 21:05:44", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 21:06:21", "action": "data_cleaning", "details": "Imputation: Mean"}
+{"timestamp": "2025-11-12 21:06:52", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 21:06:57", "action": "filter_data", "details": "Filtered Employee_ID with []"}
+{"timestamp": "2025-11-12 21:07:02", "action": "filter_data", "details": "Filtered Employee_ID with [3]"}
+{"timestamp": "2025-11-12 21:08:49", "action": "AI_query", "details": "mean"}
+{"timestamp": "2025-11-12 21:09:41", "action": "prediction", "details": "Feature: Age, Target: Work_Hours_per_Week"}
+{"timestamp": "2025-11-12 21:10:05", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-12 21:10:43", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-12 21:11:02", "action": "prediction", "details": "Feature: Prediction, Target: Work_Hours_per_Week"}
+{"timestamp": "2025-11-12 21:18:10", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 21:18:15", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 21:18:46", "action": "AI_query", "details": "mean"}
+{"timestamp": "2025-11-12 21:19:07", "action": "AI_query", "details": "what is this dataset"}
+{"timestamp": "2025-11-12 22:14:14", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 22:14:36", "action": "data_cleaning", "details": "Imputation: Mode"}
+{"timestamp": "2025-11-12 22:21:28", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 22:22:27", "action": "AI_query", "details": "mean"}
+{"timestamp": "2025-11-12 22:27:32", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 22:28:11", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2025-11-12 22:28:16", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:28:24", "action": "filter_data", "details": "Filtered Salary with []"}
+{"timestamp": "2025-11-12 22:28:33", "action": "filter_data", "details": "Filtered Salary with [35729.0]"}
+{"timestamp": "2025-11-12 22:28:35", "action": "filter_data", "details": "Filtered Salary with [35729.0, 52751.0]"}
+{"timestamp": "2025-11-12 22:28:36", "action": "filter_data", "details": "Filtered Salary with [35729.0, 52751.0, 79748.0]"}
+{"timestamp": "2025-11-12 22:28:39", "action": "filter_data", "details": "Filtered Salary with [35729.0, 52751.0, 79748.0, 91412.0]"}
+{"timestamp": "2025-11-12 22:28:40", "action": "filter_data", "details": "Filtered Salary with [35729.0, 52751.0, 79748.0, 91412.0, 57093.0]"}
+{"timestamp": "2025-11-12 22:28:45", "action": "filter_data", "details": "Filtered Salary with []"}
+{"timestamp": "2025-11-12 22:32:54", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 22:33:28", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-12 22:35:11", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:35:14", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:35:20", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2025-11-12 22:36:26", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:36:30", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:36:42", "action": "AI_query", "details": "sum"}
+{"timestamp": "2025-11-12 22:36:46", "action": "AI_query", "details": "list columns"}
+{"timestamp": "2025-11-12 22:36:51", "action": "AI_query", "details": "describe"}
+{"timestamp": "2025-11-12 22:37:24", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:37:26", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:38:48", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-12 22:39:12", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:39:15", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:39:43", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-12 22:39:45", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:08:16", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 06:08:38", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:08:47", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:10:18", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-13 06:13:41", "action": "data_cleaning", "details": "Imputation: Mode"}
+{"timestamp": "2025-11-13 06:20:59", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 06:22:08", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:22:12", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:23:03", "action": "AI_query", "details": "here this sis suitable for model training"}
+{"timestamp": "2025-11-13 06:23:28", "action": "AI_query", "details": "where this sis suitable for model training"}
+{"timestamp": "2025-11-13 06:25:06", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:25:08", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:29:28", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 06:29:44", "action": "transformation", "details": "Square Root on Employee_ID"}
+{"timestamp": "2025-11-13 06:30:03", "action": "transformation", "details": "Standardize (Z-score) on Salary"}
+{"timestamp": "2025-11-13 06:30:11", "action": "transformation", "details": "Normalize (0-1) on Employee_ID"}
+{"timestamp": "2025-11-13 06:30:19", "action": "transformation", "details": "Normalize (0-1) on Satisfaction_Score"}
+{"timestamp": "2025-11-13 06:33:21", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 06:34:04", "action": "transformation", "details": "Standardize (Z-score) on Age"}
+{"timestamp": "2025-11-13 06:34:25", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:34:27", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 06:34:58", "action": "AI_query", "details": "where this dataset is suitable for model training"}
+{"timestamp": "2025-11-13 09:12:40", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 09:13:43", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 09:13:57", "action": "filter_data", "details": "Filtered Employee_ID with []"}
+{"timestamp": "2025-11-13 09:14:01", "action": "filter_data", "details": "Filtered Employee_ID with [4]"}
+{"timestamp": "2025-11-13 09:15:31", "action": "AI_query", "details": "whether i can train a model in this"}
+{"timestamp": "2025-11-13 09:17:00", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 09:20:41", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 09:22:23", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-13 10:20:41", "action": "upload_dataset", "details": "SampleSuperstore.csv"}
+{"timestamp": "2025-11-13 10:21:45", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 10:21:53", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 10:22:32", "action": "prediction", "details": "Feature: Sales, Target: Postal Code"}
+{"timestamp": "2025-11-13 11:19:36", "action": "upload_dataset", "details": "SampleSuperstore.csv"}
+{"timestamp": "2025-11-13 11:21:50", "action": "transformation", "details": "Standardize (Z-score) on Sales"}
+{"timestamp": "2025-11-13 11:22:02", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 11:22:11", "action": "filter_data", "details": "Filtered Sales with []"}
+{"timestamp": "2025-11-13 11:23:10", "action": "AI_query", "details": "what is this dataset about"}
+{"timestamp": "2025-11-13 11:23:18", "action": "AI_query", "details": "mean"}
+{"timestamp": "2025-11-13 11:23:41", "action": "prediction", "details": "Feature: Postal Code, Target: Sales"}
+{"timestamp": "2025-11-13 11:41:04", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 11:42:30", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2025-11-13 12:22:11", "action": "upload_dataset", "details": "Employee_Performance_Data.csv"}
+{"timestamp": "2025-11-13 12:23:10", "action": "data_cleaning", "details": "Imputation: Mean"}
+{"timestamp": "2025-11-13 12:23:14", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 12:23:17", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2025-11-13 12:23:26", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2026-02-28 10:32:58", "action": "upload_dataset", "details": "data_export_20251112_223422.xlsx"}
+{"timestamp": "2026-02-28 10:34:00", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-02-28 10:34:11", "action": "filter_data", "details": "Filtered Age with []"}
+{"timestamp": "2026-02-28 10:34:18", "action": "filter_data", "details": "Filtered Age with [36.0]"}
+{"timestamp": "2026-02-28 10:34:22", "action": "filter_data", "details": "Filtered Age with []"}
+{"timestamp": "2026-02-28 10:53:36", "action": "upload_dataset", "details": "B 24-28 Batch 1 Students list (1).xlsx"}
+{"timestamp": "2026-02-28 10:53:54", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-02-28 10:53:59", "action": "filter_data", "details": "Filtered Unnamed: 1 with []"}
+{"timestamp": "2026-02-28 10:54:04", "action": "filter_data", "details": "Filtered Unnamed: 1 with ['ROLL NO']"}
+{"timestamp": "2026-02-28 10:54:08", "action": "filter_data", "details": "Filtered Unnamed: 1 with []"}
+{"timestamp": "2026-02-28 11:49:43", "action": "upload_dataset", "details": "data_export_20251112_223422.xlsx"}
+{"timestamp": "2026-02-28 11:51:11", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-02-28 11:51:18", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-02-28 11:52:22", "action": "prediction", "details": "Feature: Employee_ID, Target: Age"}
+{"timestamp": "2026-05-07 18:59:34", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-07 19:01:39", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-07 19:03:26", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-07 19:04:02", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-07 19:04:07", "action": "filter_data", "details": "Filtered city with []"}
+{"timestamp": "2026-05-07 19:04:09", "action": "filter_data", "details": "Filtered city with ['Los Angeles']"}
+{"timestamp": "2026-05-07 19:04:12", "action": "filter_data", "details": "Filtered city with ['Los Angeles', 'London']"}
+{"timestamp": "2026-05-08 09:20:06", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 09:21:50", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 09:22:22", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 09:22:24", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 09:22:37", "action": "data_cleaning", "details": "Removed 4855 duplicates"}
+{"timestamp": "2026-05-08 10:19:46", "action": "load_sample_dataset", "details": "Loaded example dataset"}
+{"timestamp": "2026-05-08 10:20:11", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 10:24:50", "action": "data_cleaning", "details": "Imputation: Median"}
+{"timestamp": "2026-05-08 10:24:52", "action": "data_cleaning", "details": "Imputation: Median"}
+{"timestamp": "2026-05-08 10:25:02", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 10:25:15", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 10:26:35", "action": "data_cleaning", "details": "Removed 4855 duplicates"}
+{"timestamp": "2026-05-08 10:26:49", "action": "outlier_handling", "details": "Remove outliers in funding_rounds"}
+{"timestamp": "2026-05-08 10:27:04", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-08 10:27:05", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-08 10:28:43", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 10:30:29", "action": "data_cleaning", "details": "Imputation: KNN Imputation"}
+{"timestamp": "2026-05-08 10:30:34", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-08 10:30:42", "action": "filter_data", "details": "Filtered name with []"}
+{"timestamp": "2026-05-08 10:30:46", "action": "filter_data", "details": "Filtered name with ['1-800-DENTIST']"}
+{"timestamp": "2026-05-08 10:30:50", "action": "filter_data", "details": "Filtered name with []"}
+{"timestamp": "2026-05-08 10:32:26", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 10:33:18", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 10:37:02", "action": "upload_dataset", "details": "investments_VC.csv"}
+{"timestamp": "2026-05-08 10:37:14", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-08 10:37:19", "action": "filter_data", "details": "Filtered None with All"}
+{"timestamp": "2026-05-08 10:38:28", "action": "prediction", "details": "Feature: funding_rounds, Target: founded_year"}
