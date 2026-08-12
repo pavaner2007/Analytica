@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.45);
+}
+
 :root {
   color-scheme: dark;
   --bg: #070814;
@@ -195,6 +212,20 @@ nav button:hover, nav button.active {
   background: var(--panel);
   backdrop-filter: blur(22px);
   box-shadow: var(--shadow);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-card:hover, .panel:hover, .stat-card:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.45), 0 0 20px rgba(124, 58, 237, 0.08);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.panel:hover {
+  transform: translateY(-2px);
 }
 
 .hero-card {
@@ -673,6 +704,21 @@ option {
   .quality-ring {
     width: 150px;
     height: 150px;
-    flex-basis: 150px;
+  }
+}
+
+/* Page fade-in slide transition animation */
+.page-fade-in {
+  animation: pageFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

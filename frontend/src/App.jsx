@@ -103,20 +103,40 @@ function DataTable({ rows }) {
 function ColumnSelector({ columns, selected, setSelected, numericOnly = false, numericColumns = [] }) {
   const availableColumns = numericOnly ? numericColumns : columns
   return (
-    <div className="chip-grid">
-      {availableColumns.map((col) => {
-        const active = selected.includes(col)
-        return (
-          <button
-            key={col}
-            className={classNames('chip', active && 'chip-active')}
-            onClick={() => setSelected(active ? selected.filter((item) => item !== col) : [...selected, col])}
-            type="button"
-          >
-            {col}
-          </button>
-        )
-      })}
+    <div className="column-selector-container">
+      <div className="bulk-selection-bar" style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+        <button
+          type="button"
+          className="ghost-button small"
+          onClick={() => setSelected(availableColumns)}
+          style={{ fontSize: '0.8rem', padding: '6px 12px' }}
+        >
+          Select All
+        </button>
+        <button
+          type="button"
+          className="ghost-button small"
+          onClick={() => setSelected([])}
+          style={{ fontSize: '0.8rem', padding: '6px 12px' }}
+        >
+          Clear Selection
+        </button>
+      </div>
+      <div className="chip-grid">
+        {availableColumns.map((col) => {
+          const active = selected.includes(col)
+          return (
+            <button
+              key={col}
+              className={classNames('chip', active && 'chip-active')}
+              onClick={() => setSelected(active ? selected.filter((item) => item !== col) : [...selected, col])}
+              type="button"
+            >
+              {col}
+            </button>
+          )
+        })}
+      </div>
     </div>
   )
 }
@@ -620,6 +640,15 @@ export default function App() {
     refreshAudit()
   }, [])
 
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => {
+        setMessage(null)
+      }, 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [message])
+
   const currentNav = navItems.find((item) => item.id === activePage)
 
   return (
@@ -660,14 +689,16 @@ export default function App() {
 
         {message && <div className={classNames('toast', message.type)}>{message.text}</div>}
 
-        {activePage === 'dashboard' && <Dashboard profile={profile} onLoadSample={handleLoadSample} />}
-        {activePage === 'upload' && <UploadPage onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
-        {activePage === 'clean' && <CleanPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
-        {activePage === 'transform' && <TransformPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
-        {activePage === 'filter' && <FilterPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
-        {activePage === 'visualize' && <VisualizePage profile={profile} setMessage={setMessage} startAction={startAction} />}
-        {activePage === 'ml' && <MLPage profile={profile} setMessage={setMessage} startAction={startAction} busy={busy} />}
-        {activePage === 'audit' && <AuditPage audit={audit} refreshAudit={refreshAudit} />}
+        <div className="page-fade-in" key={activePage}>
+          {activePage === 'dashboard' && <Dashboard profile={profile} onLoadSample={handleLoadSample} />}
+          {activePage === 'upload' && <UploadPage onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
+          {activePage === 'clean' && <CleanPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
+          {activePage === 'transform' && <TransformPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
+          {activePage === 'filter' && <FilterPage profile={profile} onProfileUpdate={setProfile} setMessage={setMessage} startAction={startAction} busy={busy} />}
+          {activePage === 'visualize' && <VisualizePage profile={profile} setMessage={setMessage} startAction={startAction} />}
+          {activePage === 'ml' && <MLPage profile={profile} setMessage={setMessage} startAction={startAction} busy={busy} />}
+          {activePage === 'audit' && <AuditPage audit={audit} refreshAudit={refreshAudit} />}
+        </div>
       </main>
     </div>
   )
