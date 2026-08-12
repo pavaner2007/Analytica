@@ -391,10 +391,14 @@ def transform_dataset(session_id: str, request: TransformRequest) -> Dict[str, A
             df[new_col] = df[col] ** 2
         elif transform_type == "standardize":
             new_col = f"{col}_standardized"
+            if df[col].isna().all():
+                raise HTTPException(status_code=400, detail=f"Column '{col}' contains only missing values and cannot be standardized.")
             scaler = StandardScaler()
             df[new_col] = scaler.fit_transform(df[[col]].fillna(df[col].mean())).ravel()
         elif transform_type == "normalize":
             new_col = f"{col}_normalized"
+            if df[col].isna().all():
+                raise HTTPException(status_code=400, detail=f"Column '{col}' contains only missing values and cannot be normalized.")
             scaler = MinMaxScaler()
             df[new_col] = scaler.fit_transform(df[[col]].fillna(df[col].mean())).ravel()
         else:
@@ -505,6 +509,12 @@ def train_model(session_id: str, request: TrainRequest) -> Dict[str, Any]:
     if model_df.shape[0] < 10:
         raise HTTPException(status_code=400, detail="Need at least 10 valid rows to train a model.")
 
+    # Filter out columns that have all missing values
+    valid_features = [col for col in features if not model_df[col].isna().all()]
+    if not valid_features:
+        raise HTTPException(status_code=400, detail="All selected feature columns have only missing values. Please select features with valid data.")
+    features = valid_features
+
     X = model_df[features]
     y = model_df[request.target]
     numeric_features = list(X.select_dtypes(include=np.number).columns)
@@ -524,8 +534,14 @@ def train_model(session_id: str, request: TrainRequest) -> Dict[str, Any]:
     )
 
     model_type = request.model_type.lower()
+    # Explicit user choices override the auto-detected classification flag
+    if model_type == "logistic_regression":
+        is_classification = True
+    elif model_type == "linear_regression":
+        is_classification = False
+
     if is_classification:
-        if target_is_numeric:
+        if pd.api.types.is_numeric_dtype(y):
             y = y.astype(str)
         if model_type == "logistic_regression":
             estimator = LogisticRegression(max_iter=1000)
